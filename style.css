@@ -597,6 +597,9 @@ th:last-child{
 }
 
 @media (max-width:768px){
+    .logo{
+        margin-left: -45px;
+    }
     .drop{
         text-align: center;
         padding: 10px 10px;
