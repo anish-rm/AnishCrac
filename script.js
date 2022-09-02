@@ -6,6 +6,8 @@ const menuBtn = document.querySelector(".menu-btn");
 const cancel = document.querySelector(".cancel-btn");
 const login = document.querySelector('.login');
 const cart = document.querySelector('.cartbut');
+const amount = document.querySelector('.amount');
+const below = document.querySelector('.below')
 // console.log(pic);
 function searching(to){
     //since list item is collection we have to convert it to array to apply filter
@@ -45,11 +47,11 @@ function searching(to){
     //     i.classList.remove('filtered');//then we are making it visible
     // });
 }
-drop.addEventListener('click', (e)=>{
-    const car = e.target.value;
-    console.log(car);
-    searching(car);
-});
+// drop.addEventListener('click', (e)=>{
+//     const car = e.target.value;
+//     console.log(car);
+//     searching(car);
+// });
 
 
 menuBtn.onclick = ()=>{
@@ -57,10 +59,14 @@ menuBtn.onclick = ()=>{
     menuBtn.classList.add("hide");
     login.classList.add("hide");
     cart.classList.add("hide");    
+    amount.classList.add("hide"); 
+    below.classList.add("hide");    
 }
 cancel.onclick = ()=>{
     menu.classList.remove("active");
     menuBtn.classList.remove("hide");
     login.classList.remove("hide");
     cart.classList.remove("hide");
+    amount.classList.remove("hide");
+    below.classList.remove("hide");    
 }

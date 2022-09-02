@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const cancel = document.querySelector(".cancel-btn");
 const login = document.querySelector('.login')
 const cart = document.querySelector('.cartbut')
+
 menuBtn.onclick = ()=>{
     menu.classList.add("active");
     menuBtn.classList.add("hide");
